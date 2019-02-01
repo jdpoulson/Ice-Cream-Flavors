@@ -7,9 +7,9 @@ $(document).ready(function() {
   });
   $("form#my-favorite-flavors").submit(function(event) {
     event.preventDefault();
-    flavors.forEach(function(flavor) {
-      $(".icecreamflavors").show();
-      $(".icecreamflavors").append("<li>" + flavor + "</li>");
-    });
+    for(index = 0; index < flavors.length; index += 1) {
+      flavors[index]
+      $(".icecreamflavors").append("<li>" + flavors[index] + "</li>")
+    };
   });
 });
